@@ -127,113 +127,150 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==========================================================================
+   11. AI DIAGNOSTICS & INSIGHT LAYOUT
+   ========================================================================== */
+
+.insight-ai-banner {
+  border: 1px solid #3b82f6;
+  background-color: #eff6ff;
+  margin-bottom: 1.5rem;
+  width: 96.5%;
+  max-width: 100%;
+}
+
+.insight-banner-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+
+.ai-banner-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-banner-text strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.ai-banner-text span {
+  font-size: 0.85rem;
+  color: #1e40af;
+}
+
+/* Metric Theme Accents */
+.pass-icon-bg { background-color: #e6f4ea; color: #137333;
+  width: 96.5%;
+  max-width: 100%;
+
+}
+.alert-icon-bg { background-color: #fce8e6; color: #c5221f;
+  width: 96.5%;
+  max-width: 100%;
+ }
+.trend-icon-bg { background-color: #fef7e0; color: #b06000;
+  width: 96.5%;
+  max-width: 100%;
+ }
+
+/* Narrative Structural Elements */
+.insight-narrative-box {
+  padding: 0.5rem 0;
+}
+
+.insight-narrative-box p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.insight-blockquote {
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-left: 4px solid #4b5563;
+  border-radius: 0 0.5rem 0.5rem 0;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.blockquote-decorator {
+  color: #4b5563;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.insight-blockquote span {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+/* Anomaly Items Stack */
+.insight-anomaly-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.anomaly-item-row {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.status-border-danger { border-left: 4px solid #ef4444; }
+.status-border-warning { border-left: 4px solid #f59e0b; }
+
+.anomaly-meta-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.anomaly-tag-danger {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.anomaly-tag-warning {
+  background-color: #fffbeb;
+  color: #b45309;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.anomaly-time-stamp {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.anomaly-item-row h4 {
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem 0;
+  color: #111827;
+}
+
+.anomaly-item-row p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.4;
+}
 
 
 
