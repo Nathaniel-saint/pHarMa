@@ -1,0 +1,121 @@
+/* .one{
+  background-color: red;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.input-form-wrapper {
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  padding: 40px 20px;
+  margin: 0 auto;
+
+}
+
+
+.input-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  padding: 32px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form-wrapper h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  align-self: center;
+}
+
+.input-form-wrapper label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #334155;
+  /* margin-bottom: 4px; */
+  font-family: 'Roboto Slab', serif;
+  /* align-self: center; */
+  padding-bottom: 0.5rem;
+  
+  
+}
+
+.user{
+  margin-right: 14.7rem;
+}
+
+.email{
+  margin-right: 16.8rem;
+}
+
+.c-pass{
+  margin-right: 11.5rem ;
+}
+
+.pass{
+  margin-right: 14.7rem;
+}
+
+
+.input-form-wrapper form input {
+  align-self: center;
+  width: 50%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1px solid #94a3b8;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.input-form-wrapper form input:focus {
+  border-color: #16a34a; 
+}
+
+.input-form-wrapper form button {
+  padding: 5px 10px;
+  border-radius: 8.5px;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  width: auto;
+  
+  background: #0f172a;
+  color: #ffffff;
+
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.input-form-wrapper form button:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+/* Link redirection alignment */
+.input-form-wrapper p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.input-form-wrapper p a {
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
