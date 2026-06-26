@@ -177,17 +177,6 @@ body {
   user-select: none;
 }
 
-.star-left {
-  top: 25%;
-  left: 12%;
-}
-
-.star-right {
-  bottom: 35%;
-  right: 12%;
-}
-
-
 .footer-bar {
   width: auto;
   padding: 30px 60px;

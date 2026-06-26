@@ -55,6 +55,7 @@ return(
         <div className="input-form-wrapper">
             <form className="form" onSubmit={handleSubmit}>
                 <h1>Sign Up</h1>
+                <img className="img-auths" src="src/assets/auth.jpg" alt="" />
                 
                 <label className="user">Username</label>
                 <input type="text" name="username" value={form.username} onChange={handleChange} required/>

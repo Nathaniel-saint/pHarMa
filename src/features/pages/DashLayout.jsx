@@ -12,18 +12,8 @@ function DashLayout() {
     localStorage.removeItem('user_token');
     sessionStorage.removeItem('user_token');
 
-    window.location.href = '/login';
+    window.location.href = '/';
   }
-
-
-
-
-
-
-
-
-
-
 
 
 

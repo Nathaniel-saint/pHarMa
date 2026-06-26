@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link, useNavigate } from 'react-router-dom';
+import './Auth.css';
 
 
 //import goes up here
@@ -7,12 +8,12 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function SignIn(){
 
+    const navigate = useNavigate();
     const [form, setForm] = useState({
         email: '',
         password: '',
     });
 
-    const navigate = useNavigate();
 
     const handleChange = (e) =>{
         setForm({
@@ -23,8 +24,12 @@ function SignIn(){
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-
+        
+        const created_token = 'fuckyou'
+        localStorage.setItem('user_token', created_token)
         const rawData = localStorage.getItem('dummyUser');
+
+        console.log(rawData)
 
         if(!rawData){
             alert('user does not exist redirecting to signup');
@@ -33,11 +38,12 @@ function SignIn(){
         }
 
         const logData = JSON.parse(rawData);
-
+  
 
         if (logData.email===form.email && logData.password===form.password){
-            alert('Successfully signed in');
             navigate('/dashboard');
+            // console.log(logData)
+            alert('Successfully signed in');
         }
         else{
             alert('invalid credentials');
@@ -47,6 +53,7 @@ function SignIn(){
     return(
             <div className="input-form-wrapper">
             <form className="form" onSubmit={handleSubmit}>
+                <img className="img-auth" src="src/assets/auth.jpg" alt="" />
                 <h1>Sign In</h1>
                 <label className="email">Email</label>
                 <input type="email" name="email" value={form.email} onChange={handleChange} required></input>
@@ -54,7 +61,7 @@ function SignIn(){
                 <input type="password" name="password" value={form.password} onChange={handleChange} required></input>
                 <button type="submit">Sign In</button>
 
-                <p>Don't have an account? <Link to="/register"><emp>register</emp></Link>.</p>
+                <p>Don't have an account? <Link to="/register"><em>register</em></Link>.</p>
             </form>
         </div>
     );

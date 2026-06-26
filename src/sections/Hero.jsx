@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 function Hero() {
     return (
         <section className="hero-section">
-            <div className="star star-left">✦</div>
-            <div className="star star-right">✦</div>
+
             
             <div className="hero-content">
                 <h1 className="hero-heading">

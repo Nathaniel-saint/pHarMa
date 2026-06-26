@@ -15,7 +15,7 @@ function History() {
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState("ALL");
 
-  // Load complete scanner database on layout mounting
+ 
   useEffect(() => {
     try {
       const cachedLogsRaw = localStorage.getItem("app_scans");

@@ -10,7 +10,6 @@ import Dashboard from "./features/pages/Dashboard";
 import Scan from "./features/pages/Scan";
 import History from "./features/pages/History";
 import User from "./features/pages/User";
-import './features/auth/Auth.css';
 import './features/pages/Dash.css'
 import './features/pages/HistInsight.css'
 import Insight from "./features/pages/Insight";
