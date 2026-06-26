@@ -123,7 +123,7 @@ function History() {
 
       {/* HISTORICAL LOGS COMPREHENSIVE VIEWPORT */}
       <div className="dashboard-split-layout">
-        <div className="dashboard-logs-summary-card">
+        <div className="history-logs-summary-card">
           <div className="summary-list-viewport">
             {filteredLogs.length === 0 ? (
               <div className="summary-empty-placeholder">

@@ -284,6 +284,7 @@
   min-width: 0;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 10%;
 }
 
 .preview-card {
@@ -296,6 +297,7 @@
   height: fit-content;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 7%;
 }
 
 .card-header h2 {
@@ -785,6 +787,19 @@
 }
 
 .dashboard-logs-summary-card {
+  width: 97.5%;
+  max-width: 100%;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  margin-top: 0; /* Clear overriding values */
+  
+}
+
+.history-logs-summary-card {
   width: 94%;
   max-width: 100%;
   min-width: 0;

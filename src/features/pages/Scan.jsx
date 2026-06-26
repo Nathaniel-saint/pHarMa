@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { Camera, Upload, AlertCircle, CheckCircle2, RotateCcw, VideoOff } from "lucide-react";
 import Tesseract from "tesseract.js";
 
-// Your localized test array acting as the reference registry database
 const REGISTERED_DRUGS_DB = [
   {
     brandName: "Amoxicillin",
@@ -21,8 +20,69 @@ const REGISTERED_DRUGS_DB = [
     activeIngredient: "Artesunate 50mg / Amodiaquine 153mg",
     manufacturer: "Danadams Pharmaceuticals",
     dosage: "Composite"
+  },
+  {
+    brandName: "Wormplex 400",
+    activeIngredient: "Albendazole",
+    manufacturer: "Pharma Nova Ltd",
+    dosage: "400mg"
+  },
+  {
+    brandName: "Gebedol",
+    activeIngredient: "Paracetamol 325mg / Diclofenac Potassium 50mg / Caffeine 30mg",
+    manufacturer: "Gokals Laborex Ltd",
+    dosage: "Composite"
+  },
+  {
+    brandName: "Koflyn",
+    activeIngredient: "Diphenhydramine HCl / Ammonium Chloride / Sodium Citrate",
+    manufacturer: "Kinapharma Ltd",
+    dosage: "Composite"
+  },
+  {
+    brandName: "Lonart",
+    activeIngredient: "Artemether 20mg / Lumefantrine 120mg",
+    manufacturer: "Bliss GVS Pharma",
+    dosage: "Composite"
+  },
+  {
+    brandName: "Cipro-Med",
+    activeIngredient: "Ciprofloxacin",
+    manufacturer: "Medreich Ltd",
+    dosage: "500mg"
+  },
+  {
+    brandName: "Ganda Plus",
+    activeIngredient: "Metronidazole",
+    manufacturer: "Ernest Chemists Ltd",
+    dosage: "400mg"
+  },
+  {
+    brandName: "Zinnat",
+    activeIngredient: "Cefuroxime Axetil",
+    manufacturer: "GlaxoSmithKline",
+    dosage: "250mg"
+  },
+  {
+    brandName: "Amlodipine",
+    activeIngredient: "Amlodipine Besylate",
+    manufacturer: "Letap Pharmaceuticals Ltd",
+    dosage: "5mg"
+  },
+  {
+    brandName: "Metformin",
+    activeIngredient: "Metformin Hydrochloride",
+    manufacturer: "M&G Pharmaceuticals",
+    dosage: "500mg"
+  },
+  {
+    brandName: "Ventolin",
+    activeIngredient: "Salbutamol",
+    manufacturer: "GlaxoSmithKline",
+    dosage: "100mcg/dose"
   }
 ];
+
 
 function Scan() {
   // Core functional app states

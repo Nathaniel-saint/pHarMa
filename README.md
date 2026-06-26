@@ -102,16 +102,25 @@ Clicking Logout triggers an event handler that clears the `user_token` from brow
 
 ## 📝 Regulatory Reference Seed Database
 
-The scanning engine parses character structures against the following initialized registry (defined in `Scan.jsx`):
+The scanning layout parses character structures directly against the following initialized data block (`Scan.jsx`):
 
-| Brand Name | Active Ingredient | Licensed Manufacturer | Declared Dosage |
-|------------|-------------------|----------------------|-----------------|
-| Amoxicillin | Amoxicillin Trihydrate | Kinapharma Ltd | 500mg |
-| Paracetamol | Acetaminophen | M&G Pharmaceuticals | 500mg |
-| Artesunate | Artesunate 50mg / Amodiaquine 153mg | Danadams Pharmaceuticals | Composite |
+| Brand Name | Active Chemical Ingredient | Licensed Manufacturer | Declared Unit Dosage |
+| :--- | :--- | :--- | :--- |
+| **Amoxicillin** | Amoxicillin Trihydrate | Kinapharma Ltd | 500mg |
+| **Paracetamol** | Acetaminophen | M&G Pharmaceuticals | 500mg |
+| **Artesunate** | Artesunate 50mg / Amodiaquine 153mg | Danadams Pharmaceuticals | Composite |
+| **Wormplex 400** | Albendazole | Pharma Nova Ltd | 400mg |
+| **Gebedol** | Paracetamol 325mg / Diclofenac Potassium 50mg / Caffeine 30mg | Gokals Laborex Ltd | Composite |
+| **Koflyn** | Diphenhydramine HCl / Ammonium Chloride / Sodium Citrate | Kinapharma Ltd | Composite |
+| **Lonart** | Artemether 20mg / Lumefantrine 120mg | Bliss GVS Pharma | Composite |
+| **Cipro-Med** | Ciprofloxacin | Medreich Ltd | 500mg |
+| **Ganda Plus** | Metronidazole | Ernest Chemists Ltd | 400mg |
+| **Zinnat** | Cefuroxime Axetil | GlaxoSmithKline | 250mg |
+| **Amlodipine** | Amlodipine Besylate | Letap Pharmaceuticals Ltd | 5mg |
+| **Metformin** | Metformin Hydrochloride | M&G Pharmaceuticals | 500mg |
+| **Ventolin** | Salbutamol | GlaxoSmithKline | 100mcg/dose |
 
-**Verification Logic:**  
-Any scanned product that doesn't match this registry is automatically tagged with a **FLAGGED** status and isolated in the Public Warning Registry for public safety visibility.
+Any scanning capture payload mismatching this matrix is explicitly tagged with a `FLAGGED` status configuration and isolated directly inside the **Public Warning Registry**.
 
 ---
 
