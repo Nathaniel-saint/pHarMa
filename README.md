@@ -55,7 +55,7 @@ Enforces localized route security via a wrapper that intercepts unauthorized man
 │   │       ├── PublicRegistry.jsx # Open-access restricted item tracker
 │   │       ├── Scan.jsx        # Image capture manipulation processing frame
 │   │       ├── Unregistered.jsx# Suspicious batch evaluation page
-│   │       └── User.jsx        # System management parameters screen
+│   │       └── User.jsx        # User Profile page --not developed yet
 │   ├── sections/               # Public landing home sections
 │   │   ├── Nav.jsx             
 │   │   ├── Hero.jsx            
