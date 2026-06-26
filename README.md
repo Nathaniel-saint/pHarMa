@@ -37,20 +37,33 @@ Enforces localized route security via a wrapper that intercepts unauthorized man
 ## 📂 Project Directory Breakdown
 
 ```
-src/
-├── components/
-│   ├── ProtectedRoute.jsx      # Route guardian for unauthenticated pathing
-│   ├── DashLayout.jsx          # Application shell with sidebar architecture
-│   ├── Dashboard.jsx           # Main control center telemetry node
-│   ├── Scan.jsx                # OCR processing suite
-│   ├── History.jsx             # Comprehensive audit ledger view
-│   ├── PublicRegistry.jsx       # Public-facing flagged items database
-│   ├── Login.jsx               # Authentication gateway
-│   └── Signup.jsx              # User registration component
-├── styles/
-│   └── Dash.css                # Centralized layout styles & UI tokens
-├── App.jsx                     # Client-side router configuration
-└── main.jsx                    # DOM mount point
+├── src/
+│   ├── assets/                 # Static media assets (hero imagery, icons)
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── Auth.css        # Authentication UI specific layout sheets
+│   │   │   ├── ProtectedRoute.jsx # Route security layer intercepting sessions
+│   │   │   ├── SignIn.jsx      # Portal administrative entry screen
+│   │   │   └── SignUP.jsx      # Registry screen for access authorization
+│   │   └── pages/
+│   │       ├── Dash.css        # Central Dashboard control shell tokens
+│   │       ├── Dashboard.jsx   # Metrics, core summaries, and pass rate trackers
+│   │       ├── DashLayout.jsx  # Context wrapper containing navigation rails
+│   │       ├── HistInsight.css # Specialized sheets handling lists and analysis logs
+│   │       ├── History.jsx     # Master log file ledger track
+│   │       ├── Insight.jsx     # Automated heuristic diagnostic analysis summary view
+│   │       ├── PublicRegistry.jsx # Open-access restricted item tracker
+│   │       ├── Scan.jsx        # Image capture manipulation processing frame
+│   │       ├── Unregistered.jsx# Suspicious batch evaluation page
+│   │       └── User.jsx        # System management parameters screen
+│   ├── sections/               # Public landing home sections
+│   │   ├── Nav.jsx             
+│   │   ├── Hero.jsx            
+│   │   └── Footer.jsx          
+│   ├── App.css                 # Base globally shared stylesheet rules
+│   ├── App.jsx                 # Entry Route engine map architecture
+│   ├── index.css               # Native CSS typography properties
+│   └── main.jsx                # Layout component element mount node
 ```
 
 ---
