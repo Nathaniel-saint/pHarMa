@@ -21,7 +21,7 @@ function Hero() {
                     <Link to="/register" className="button-h button-primary">
                         Get Started
                     </Link>
-                    <Link to="/registry" className="button-h button-secondary">
+                    <Link to="/registry" className="button-h button-secondary" target="_blank">
                         Flagged Drugs
                     </Link>
                 </div>

@@ -67,7 +67,7 @@ function Insight() {
       <div className="dashboard-split-layout">
         
         {/* Left Column: Executive Summary Evaluation */}
-        <div className="dashboard-logs-summary-card">
+        <div className="insight-logs-summary-card">
           <div className="card-header-inline">
             <Brain size={18} className="section-header-icon" />
             <h3>Executive Audit Summary</h3>
@@ -89,7 +89,7 @@ function Insight() {
         </div>
 
         {/* Right Column: Targeted Key Anomalies Discovered */}
-        <div className="dashboard-logs-summary-card">
+        <div className="insight-logs-summary-card">
           <div className="card-header-inline">
             <Activity size={18} className="section-header-icon" />
             <h3>Anomalies Detected</h3>
