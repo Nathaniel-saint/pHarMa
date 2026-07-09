@@ -82,9 +82,9 @@ function Dashboard() {
           <h1>Analytics Control Center</h1>
           <p>Real-time telemetry and overview metrics from authentication scanning checkpoints.</p>
         </div>
-        <Link to="/dashboard/scan" className="btn btn-primary nav-shortcut-btn">
-          <ScanLine size={18} />
-          <span>Launch Scanner</span>
+        <Link to="/dashboard/scan" className="btn btn-primary launch-size nav-shortcut-btn">
+          <ScanLine className="launch" size={18} />
+          <span className="launch">Launch Scanner</span>
         </Link>
       </div>
 

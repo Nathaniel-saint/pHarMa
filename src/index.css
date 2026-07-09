@@ -114,11 +114,11 @@ body {
   margin-bottom: 24px;
 }
 
-.green-text {
+/* .green-text {
   background: linear-gradient(135deg, #0f172a 30%, #16a34a 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .hero-subtext {
   font-size: 1.15rem;
@@ -168,14 +168,14 @@ body {
 }
 
 
-.star {
+/* .star {
   position: absolute;
   color: #bbf7d0;
   font-size: 1.8rem;
   font-weight: 300;
   pointer-events: none;
   user-select: none;
-}
+} */
 
 .footer-bar {
   width: auto;

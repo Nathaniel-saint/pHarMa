@@ -34,7 +34,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01);
   margin-top: 0 !important;
   margin-bottom: 1.5rem;
-  width: 97%;
+  width: 96%;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -273,7 +273,7 @@
 }
 
 .insight-logs-summary-card {
-  width: 94%;
+  width: 91%;
   max-width: 100%;
   min-width: 0;
   background: #ffffff;
@@ -284,12 +284,6 @@
   margin-top: 0; /* Clear overriding values */
   
 }
-
-
-
-/* ==========================================================================
-   10. PUBLIC REGISTRY SECTOR ACCENTS
-   ========================================================================== */
 
 .public-warning-banner {
   border: 1px solid #ef4444;

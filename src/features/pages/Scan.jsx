@@ -186,6 +186,8 @@ function Scan() {
 
       const normalizedScannedText = text.toLowerCase();
 
+      console.log(normalizedScannedText);
+
       let matchedDrug = REGISTERED_DRUGS_DB.find((drug) =>
         normalizedScannedText.includes(drug.brandName.toLowerCase()) ||
         normalizedScannedText.includes(drug.activeIngredient.toLowerCase())
@@ -225,7 +227,10 @@ function Scan() {
           timeLogged: timestamp,
           scannedId: Date.now()
         };
+
+        console.log(scannedResult);
       }
+      
 
       // Append the record to localStorage for Dashboard integration
       const currentLogsRaw = localStorage.getItem("app_scans");

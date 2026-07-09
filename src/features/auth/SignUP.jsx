@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link, useNavigate } from 'react-router-dom';
-
+import './Auth.css';
 
 //import goes up here
 
@@ -55,19 +55,32 @@ return(
         <div className="input-form-wrapper">
             <form className="form" onSubmit={handleSubmit}>
                 <h1>Sign Up</h1>
+
                 <img className="img-auths" src="src/assets/auth.jpg" alt="" />
-                
-                <label className="user">Username</label>
-                <input type="text" name="username" value={form.username} onChange={handleChange} required/>
-                
-                <label className="email">Email</label>
-                <input type="email" name="email" value={form.email} onChange={handleChange} required/>
-                
-                <label className="pass">Password</label>
-                <input type="password" name="password" value={form.password} onChange={handleChange} required/>
-                
-                <label className="c-pass">Confirm Password</label>
-                <input type="password" name="confirmPassword" value={form.confirmPassword} onChange={handleChange} required />
+
+                <div className="pos-one">
+                    <div className="one">
+                        <label className="user">Username</label>
+                        <input type="text" name="username" value={form.username} onChange={handleChange} required/>
+                    </div>
+
+                    <div className="two">
+                        <label className="email">Email</label>
+                        <input type="email" name="email" value={form.email} onChange={handleChange} required/>
+                    </div>
+                </div>
+
+                <div className="pos-two">
+                    <div className="three">
+                        <label className="pass">Password</label>
+                        <input type="password" name="password" value={form.password} onChange={handleChange} required/>
+                    </div>
+                    
+                    <div className="four">
+                        <label className="c-pass">Confirm Password</label>
+                        <input type="password" name="confirmPassword" value={form.confirmPassword} onChange={handleChange} required />
+                    </div>
+                </div>
                 
                 <button type="submit">Submit</button>
                 
