@@ -228,7 +228,7 @@ function Scan() {
           scannedId: Date.now()
         };
 
-        console.log(scannedResult);
+        console.log(scanResult);
       }
       
 
@@ -277,7 +277,7 @@ function Scan() {
               <>
                 <button onClick={capturePhoto} className="btn btn-primary">
                   <Camera size={18} />
-                  <span>Snap Photo</span>
+                  <span >Snap Photo</span>
                 </button>
                 <button onClick={stopCamera} className="btn btn-secondary">
                   <VideoOff size={18} />

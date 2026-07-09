@@ -166,7 +166,7 @@
 .pass-icon-bg { background-color: #e6f4ea; color: #137333;
   width: 96.5%;
   max-width: 100%;
-
+  
 }
 .alert-icon-bg { background-color: #fce8e6; color: #c5221f;
   width: 96.5%;
@@ -243,6 +243,7 @@
   font-weight: 700;
   padding: 0.2rem 0.5rem;
   border-radius: 0.25rem;
+  background: none;
 }
 
 .anomaly-tag-warning {
@@ -281,7 +282,7 @@
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-  margin-top: 0; /* Clear overriding values */
+  margin-top: 0; 
   
 }
 
@@ -308,6 +309,7 @@
 .warning-banner-text {
   display: flex;
   flex-direction: column;
+  background: none;
 }
 
 .warning-banner-title {
@@ -349,3 +351,4 @@
 .btn-danger-action:hover {
   background-color: #dc2626;
 }
+
