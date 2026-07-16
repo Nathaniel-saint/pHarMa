@@ -18,12 +18,17 @@
 
 .shortcut-arrow-icon {
   transition: transform 0.2s ease;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .text-link-shortcut:hover .shortcut-arrow-icon {
   transform: translateX(-3px);
 }
 
+.arrow-text{
+  font-weight: 600;
+  margin: 1rem 0 0.5rem 0;
+}
 
 
 .filter-controls-card {
@@ -328,11 +333,10 @@
   color: #10b981;
 }
 
-.dynamic-danger-border {
+/* .dynamic-danger-border {
   border-left: 4px solid #ef4444 !important;
-}
+} */
 
-/* Public Registry Primary Action trigger link */
 .btn-danger-action {
   background-color: #ef4444;
   color: #ffffff;
