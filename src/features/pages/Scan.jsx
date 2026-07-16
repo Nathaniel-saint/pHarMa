@@ -166,7 +166,7 @@ function Scan() {
     setProgress("");
   };
 
-  // 5. Tesseract Core Processing Matrix Pipeline
+
   const runVerificationPipeline = async () => {
     if (!image) return;
 
@@ -175,12 +175,15 @@ function Scan() {
     setProgress("Initializing OCR Core Engine...");
 
     try {
-      // Run the image through the Tesseract engine
+  
       const { data: { text } } = await Tesseract.recognize(image, "eng", {
         logger: (m) => {
           if (m.status === "recognizing") {
             setProgress(`Analyzing Text Lines: ${Math.floor(m.progress * 100)}%`);
           }
+        },
+         config: {
+            tessedit_char_whitelist: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-./% "
         }
       });
 
@@ -201,7 +204,6 @@ function Scan() {
       });
 
       if (matchedDrug) {
-        // MATCH DETECTED: Uses matching database credentials
         scanResult = {
           ...matchedDrug,
           status: "REGISTERED",
@@ -209,13 +211,11 @@ function Scan() {
           scannedId: Date.now()
         };
       } else {
-        // NO DATABASE MATCH FOUND: Parse out the real scanned text dynamically!
         const rawLines = text
           .split("\n")
           .map((line) => line.trim())
           .filter((line) => line.length > 0);
 
-        // Fallback title text if the parsed block layout yields zero characters
         const detectedTitle = rawLines.length > 0 ? rawLines[0] : "Unreadable Print Layout";
 
         scanResult = {
@@ -228,15 +228,11 @@ function Scan() {
           scannedId: Date.now()
         };
 
-        console.log(scanResult);
       }
       
-
-      // Append the record to localStorage for Dashboard integration
       const currentLogsRaw = localStorage.getItem("app_scans");
       const currentLogs = currentLogsRaw ? JSON.parse(currentLogsRaw) : [];
       localStorage.setItem("app_scans", JSON.stringify([scanResult, ...currentLogs]));
-
       setVerdict(scanResult);
     } catch (error) {
       console.error("OCR Extraction Crash:", error);
@@ -246,7 +242,6 @@ function Scan() {
     }
   };
 
-  // Component View Template Render Matrix
   return (
     <div className="scanner-dashboard-wrapper">
       <div className="grid-container">

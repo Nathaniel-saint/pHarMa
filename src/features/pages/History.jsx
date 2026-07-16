@@ -69,7 +69,7 @@ function History() {
         </div>
         
         {logs.length > 0 && (
-          <button onClick={handleClearHistory} className="btn btn-secondary text-danger">
+          <button onClick={handleClearHistory} className=" quick-fix btn btn-secondary text-danger">
             <Trash2 size={16} />
             <span>Purge Ledger Logs</span>
           </button>
